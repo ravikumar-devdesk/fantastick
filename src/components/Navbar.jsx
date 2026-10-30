@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex items-center gap-4 relative">
             {NavbarMenu.map((item) => (
-              <li>
+              <li key={item.id}>
                 <UpdateFollower
                   mouseOptions={{
                     backgroundColor: "white",

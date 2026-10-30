@@ -171,6 +171,7 @@ const Hero = () => {
               {HeroData.map((data) => {
                 return (
                   <UpdateFollower
+                    key={data.id}
                     mouseOptions={{
                       backgroundColor: data.bgColor,
                       zIndex: 9999,
